@@ -4,7 +4,7 @@
   "description": "Simple wrappers for communicating to the SerLCD 2.5",
   "main": "index.js",
   "dependencies": {
-    "serialport": "~1.0.8"
+    "serialport": "1.x.x"
   },
   "devDependencies": {},
   "scripts": {
