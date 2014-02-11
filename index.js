@@ -6,7 +6,7 @@
 var SerialPort = require("serialport").SerialPort;
 
 function SerLCD(serialport, flushInterval){
-    this.serialPort = new SerialPort(serialport || "/dev/ttyUSB0");
+    this.serialPort = new SerialPort(serialport || "/dev/ttyUSB0", 9600);
     this.writeQueue = []; //A pipeline for commands so we don't overwhelm the thing
     this.flushInterval = parseInt(flushInterval) || 10;
     
